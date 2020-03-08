@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>CSS_Report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ 
+body{
+    margin:0;
+}
+#container{
+    max-width: 1100px;
+    border-right:1px solid rgba(190, 190, 190, 0.35) ;
+     
+    
+}
+ header{
+      margin-top:20px;
+      
+   
+ }
+ header a{
+     margin-left:10px;
+     font-size: 37px;
+     color:#555555;
+     text-decoration: none;
+     font-family:Impact;
+      
+     
+ }
+ #h{
+    position:sticky;
+    top:0;
+ 
+ }
+
+
+
+
+ #v{
+    position:sticky;
+    top:50px;
+    width: 200px;
+    height: 0px;
+ 
+ }
+ 
+ 
+ 
+ 
+.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5f5f5f;
+  margin-top:10px;
+  height:50px;
+  
+  
+}
+
+.horizontal li {
+  float:left;
+}
+
+.horizontal li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.horizontal li a:hover {
+  background-color: #111;
+}
+
+
+.vertical{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    height:1000px;
+    overflow: auto;
+   
+  
+}
+
+.vertical a {
+  display:block;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+   
+}
+
+.vertical h1{
+    margin-left:20px;
+    
+     
+}
+ 
+
+.vertical li a:hover:not(.active){
+  background-color: rgb(180, 180, 180);
+  color: white;
+}
+
+#active{
+    color: white ;
+    background-color:#4CAF50 ;
+}
+
+#title{
+    font-size: 42px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+
+#title{
+    font-size: 42px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+
+.next{
+    display:block;
+    background-color: #4CAF50;
+    color:white;
+    text-decoration: none;
+    height: 40px;
+    width:70px;
+    font-size:20px ;
+    text-align: center;
+    padding-top: 8px;
+    float: right;
+    margin-top: -10px;
+}
+
+.next:hover{
+    background-color: rgb(52, 116, 54);
+     
+}
+
+
+hr{
+    margin-top:30px;
+    background-color:rgba(187, 187, 187, 0.35);
+    height: 1px;
+    border:0;
+     
+}
+.title2{
+    font-size: 35px;
+    font-family: 'Segoe UI';
+    font-weight: 350;
+}
+
+.Ex{
+    background-color: #f1f1f1;
+    width:515px;
+}
+.Ex p{
+    font-size: 24px;
+    padding:20px 0 0 20px;
+}
+
+.Ex img{
+    padding: 0 0 20px 20px;
+}
+ 
+.notice{
+     background-color: #ffffcc;
+     padding:11px;
+     width:101.9%;
+     margin-left:-20px;
+ }
+ 
+ table{
+    margin:20px 0;     
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 530px;
+    display: table; 
+    border: 1px solid #ccc;
+ }
+
+ table tr{
+    border-bottom: 1px solid #ddd;
+ }
+ table tr:nth-child(2n){
+    background-color:  rgb(236, 236, 236);
+ }
+
+ .background_intro{
+    margin-top:100px;
+    border:1px solid  #ddd;
+    padding:10px;
+    background-color:  #ddd;
+ }
+
+</style>
+</head>
+<body>
+    <header>
+        <a href="#">Assignment3schools <span style="color:#4CAF50 ;">.com</span></a>
+        <span style="margin-top:20px; float:right;">THE WORLD's LARGEST WEB DEVELOPER SITE</span>
+    </header>
+ 
+    <nav id="h">
+        <ul class="horizontal">
+            <li><a href="#">HTML</a></li>
+            <li style="background-color:#4CAF50 ;"> <a href="#">CSS</a> </li>
+            <li> <a href="#">JavaScript</a></li>
+            <li style="float: right; background-color:#4CAF50 ;" ><a  href="#">MORE</a></li>
+            
+        </ul>
+
+    </nav>
+
+   
+    <nav id="v">
+        <ul class="vertical">
+            <li><h1>CSS Tutorial</h1></li>
+            <li><a href="CSS_Text.html">Text</a></li>
+            <li><a href="CSS_Font.html ">Font</a></li>
+            <li ><a id="active" href="CSS_Background.html">Background</a></li>
+            <li><a href="CSS_2DTransform.html">2D Transform</a></li>
+            <li><a href="CSS_Transition.html">Transition</a></li>
+          </ul>
+    </nav>
+    
+    
+<div id="container">
+    <div style="margin-left:200px;padding:100px 16px;   ">
+        <h2 id="title">CSS Background</h2>
+        <div>
+            <a class="next" style="width: 100px; float:left;" href="CSS_Font.html">Previous</a>
+            <a class="next" href="CSS_2DTransform.html">Next</a>
+        </div>
+       
+        
+        <div class="background_intro">
+            <p>CSS background 속성은 요소의 배경 효과를 지정하는데 사용된다.</p>
+            <p>이번 chapter에서는 다음과 같은 CSS background 속성을 배운다.</p>
+            <ul>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-repeat</li>
+                <li>background-attachment</li>
+                <li>background-position</li>
+            </ul>
+        </div>
+
+
+        <hr style="margin-top:50px">  
+           
+        <div style="margin-top: 30px;">
+            <h1 class="title2">CSS background-color</h1>    
+            <p>background-color 속성은 요소의 배경색을 지정한다.</p>
+            <div class="Ex">
+                <p>Example</p>
+                <img src="ex21.png">
+            </div>
+            <p>color 속성은 텍스트 색상을 정하는데 사용된다. 색상은 다음과 같이 구체화된다:</p>
+            <ul>
+                <li>색상의 이름 - Ex) "red"</li>
+                <li>HEX 속성-Ex) "#ff0000"</li>
+                <li>RGB 속성-Ex) "rgb(255,0,0)"</li>
+            </ul>
+            <div class="Ex">
+                <p>Example</p>
+                <img src="ex22.png">
+            </div>
+            
+
+        </div>
+        <hr>
+        <div style="margin-top: 50px;">
+
+            <a class="next" style="width: 100px; float:left;" href="CSS_Font.html">Previous</a>
+            <a class="next" href="CSS_Transition.html">Next</a>
+        
+        </div>
+      
+          
+          
+    </div>    
+</div>
+
+</body>
+</html>

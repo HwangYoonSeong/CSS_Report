@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>CSS_Report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+    margin:0;
+}
+#container{
+    max-width: 1100px;
+    border-right:1px solid rgba(190, 190, 190, 0.35) ;
+     
+    
+}
+ header{
+      margin-top:20px;
+      
+   
+ }
+ header a{
+     margin-left:10px;
+     font-size: 37px;
+     color:#555555;
+     text-decoration: none;
+     font-family:Impact;
+      
+     
+ }
+ #h{
+    position:sticky;
+    top:0;
+ 
+ }
+
+
+
+
+ #v{
+    position:sticky;
+    top:50px;
+    width: 200px;
+    height: 0px;
+ 
+ }
+ 
+ 
+ 
+ 
+.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5f5f5f;
+  margin-top:10px;
+  height:50px;
+  
+  
+}
+
+.horizontal li {
+  float:left;
+}
+
+.horizontal li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.horizontal li a:hover {
+  background-color: #111;
+}
+
+
+.vertical{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    height:1000px;
+    overflow: auto;
+   
+  
+}
+
+.vertical a {
+  display:block;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+   
+}
+
+.vertical h1{
+    margin-left:20px;
+    
+     
+}
+ 
+
+.vertical li a:hover:not(.active){
+  background-color: rgb(180, 180, 180);
+  color: white;
+}
+
+#active{
+    color: white ;
+    background-color:#4CAF50 ;
+}
+
+#title{
+    font-size: 42px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+
+#title{
+    font-size: 42px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+
+.next{
+    display:block;
+    background-color: #4CAF50;
+    color:white;
+    text-decoration: none;
+    height: 40px;
+    width:70px;
+    font-size:20px ;
+    text-align: center;
+    padding-top: 8px;
+    float: right;
+    margin-top: -10px;
+}
+
+.next:hover{
+    background-color: rgb(52, 116, 54);
+     
+}
+
+
+hr{
+    margin-top:30px;
+    background-color:rgba(187, 187, 187, 0.35);
+    height: 1px;
+    border:0;
+     
+}
+.title2{
+    font-size: 35px;
+    font-family: 'Segoe UI';
+    font-weight: 350;
+}
+
+.Ex{
+    background-color: #f1f1f1;
+    width:515px;
+}
+.Ex p{
+    font-size: 24px;
+    padding:20px 0 0 20px;
+}
+
+.Ex img{
+    padding: 0 0 20px 20px;
+}
+ 
+ .notice{
+     background-color: #ffffcc;
+     padding:11px;
+     width:101.9%;
+     margin-left:-20px;
+ }
+ 
+ table{
+    margin:20px 0;     
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 530px;
+    display: table; 
+    border: 1px solid #ccc;
+ }
+
+ table tr{
+    border-bottom: 1px solid #ddd;
+ }
+ table tr:nth-child(2n){
+    background-color:  rgb(236, 236, 236);
+ }
+</style>
+</head>
+<body>
+    <header>
+        <a href="#">Assignment3schools<span style="color:#4CAF50 ;">.com</span></a>
+        <span style="margin-top:20px; float:right;">THE WORLD's LARGEST WEB DEVELOPER SITE</span>
+    </header>
+ 
+    <nav id="h">
+        <ul class="horizontal">
+            <li><a href="#">HTML</a></li>
+            <li style="background-color:#4CAF50 ;"> <a href="#">CSS</a> </li>
+            <li> <a href="#">JavaScript</a></li>
+            <li style="float: right; background-color:#4CAF50 ;" ><a  href="#">MORE</a></li>
+            
+        </ul>
+
+    </nav>
+
+    <nav id="v">
+        <ul class="vertical">
+            <li><h1>CSS Tutorial</h1></li>
+            <li><a href="CSS_Text.html">Text</a></li>
+            <li><a id="active" href="CSS_Font.html ">Font</a></li>
+            <li><a href="CSS_Background.html">Background</a></li>
+            <li><a href="CSS_2DTransform.html">2D Transform</a></li>
+            <li><a href="CSS_Transition.html">Transition</a></li>
+          </ul>  
+    </nav>
+    
+    
+    
+<div id="container">
+    <div style="margin-left:200px;padding:100px 16px;   ">
+        <h2 id="title">CSS Font</h2>
+        
+        <div>
+            <a class="next" style="width: 100px; float:left;" href="CSS_Text.html">Previous</a>
+            <a class="next" href="CSS_Background.html">Next</a>
+        </div>
+
+        <hr style="margin-top:100px">  
+           
+        <div style="margin-top: 30px;">
+            <h1 class="title2">Text Color</h1>
+            <p>Serif 글씨체와 Sans-serif 글씨체의 차이점</p>
+            <img src="fontex.png">
+        </div>
+
+        <hr>  
+        <div>
+            <h1 class="title2">CSS Font Families</h1>
+            <p>CSS에서는 두 가지 글꼴 모음이 있다.</p>
+            <ul>
+                <li>generic family - 비슷한 모양의 글씨체 모음 Ex)"Serif" 또는 "Monospace"</li>
+                <li>font family - 특정한 글꼴 Ex)"Time New Roman" 또는 "Arial"</li>
+            </ul>
+
+            <table class="w3-table-all notranslate"  >
+                <tbody>
+                <tr>
+                    <th style="width:20%">Generic family</th>
+                    <th style="width:30%">Font family</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Serif</td>
+                    <td><span style="font-size:150%;font-family:Times New Roman">Times New Roman</span><br>
+                    <span style="font-size:150%;font-family:Georgia">Georgia</span></td>
+                    <td>Serif fonts have small lines at the ends on some characters</td>
+                </tr>
+                <tr>
+                    <td>Sans-serif</td>
+                    <td><span style="font-size:150%;font-family:Arial">Arial</span><br>
+                    <span style="font-size:150%;font-family:Verdana">Verdana</span></td>
+                    <td>"Sans" means without - these fonts do not have the 
+                        lines at the ends of characters</td>
+                </tr>
+                <tr>
+                    <td>Monospace</td>
+                    <td><span style="font-size:150%;font-family:Courier New">Courier New</span><br>
+                    <span style="font-size:150%;font-family:Lucida Console">Lucida Console</span></td>
+                    <td>All monospace characters have the same width</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="notice">
+                <p><b>Note</b>: 컴퓨터의 경우, Sans-serif 글꼴이 serif 글꼴보다 더 읽히기 쉽다. </p>
+            </div>
+
+            <hr>  
+            <div>
+                <h1 class="title2">Font Familiy</h1>
+                <p>텍스트의 글꼴은 font-family 속성으로 지정된다.</p>
+                <p>font-family 속성은 몇개의 글꼴을 "fallback"시스템으로써 가지고 있어야한다. 만약 브라우저가 첫번째 font를 지원하지 않는다면, 다음 폰트를 시도하는 방식이다.</p>
+                <p><b>Note:</b>만약 글꼴이 한 개 이상이라면, 큰 따옴표를 사용해야한다. Ex) "Times New Roman". </p>
+                <p>한 개 이상의 글꼴은 콤마로 구분된다:</p>  
+
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex13.png">
+                </div> 
+            </div>
+
+            <hr>  
+            <div>
+                <h1 class="title2">Font Style</h1>
+                <p>fony-style 속성은 대부분 italic 텍스트를 지정할 때 쓰인다.</p>
+                <p>이 속성은 3개의 값을 가진다.</p>
+                <ul>
+                    <li>normal- 일반적인 방식</li>
+                    <li>italic- italic 방식</li>
+                    <li>oblique-"leaning"방식(oblique 는 italic과 매우 유사하지만 잘 지원되지 않는다.</li>
+                </ul>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex14.png">
+                </div> 
+            </div>
+
+            <hr>  
+            <div>
+                <h1 class="title2">Font Size</h1>
+                <p>font-size 속성은 텍스트의 크기를 지정한다.</p>
+                <p>
+                    텍스트의 크기를 지정할 수 있는 것은 웹디자인에서 중요하다. 하지만, paragraphs를 headings 처럼 보이게 하거나 headings를 paragraphs 처럼 보이게 하기 위해서 글꼴 크기 조정을 사용하면 안된다.
+                </p>
+
+                <p> 
+                    headings에는 &lth1&gt~&lth6&gt, paragraphs에는 &ltp&gt처럼, 항상 적절한 HTML 태그를 사용해라"
+                </p>
+
+                <p>
+                    font-size 속성은 절대적이거나 상대적일 수 있다.
+                </p>
+
+                <p>절대적 크기:</p>
+                <ul>
+                    <li>특정한 크기에 텍스트를 지정한다.</li>
+                    <li>사용자가 브라우저 내의 텍스트 크기를 바꿀 수 없도록 한다(접근성에 좋지 않으므로)</li>
+                    <li>절대적 크기는 출력의 실제 크기가 알려졌을 때 유용하다. </li>
+
+                </ul>
+                <p>상대적 크기:</p>
+                <ul>
+                    <li>요소와 상대적인 크기를 지정한다. </li>
+                    <li>사용자가 브라우저 내의 텍스트 크기를 변경할 수 있도록 한다.</li>
+                </ul>
+
+                <div class="notice">
+                    <p><b>Note</b>: 글자의 크기를 지정하지 않는다면 paragraphs일 경우 디폴트 크기는 16px 이다(16px=1em). </p>
+                </div>
+            </div>
+
+            <hr>  
+            <div>
+                <h1 class="title2">Set Font Size With Pixels</h1>
+                <p>텍스트 크기를 pixel로 지정하면 텍스트 크기를 완전히 제어할 수 있다. </p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex15.png">
+                </div>
+
+                <p><b>Tip:</b> pixel을 사용해도 zoom 툴을 사용하여 페이지 전체의 크기를 재조정 할 수 있다. </p>
+            </div>
+
+            <hr>  
+            <div>
+                <h1 class="title2">Set Font Size With Em</h1>
+                <p> 사용자가 텍스트의 크기를 재조정 할 수 있도록(브라우저 메뉴에서), 많은 개발자들이 pixel 대신 em을 사용한다.</p>
+                <p>em 크기 단위는 W3C에서 권고된다.</p>
+                <p>1em 은 현재 글꼴 크기와 동일하다. 브라우저 내의 디폴트 크기는 16px이다. 따라서 1em은 16px이다.</p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex16.png">
+                </div>
+
+                <p>위의 예시에서, em으로 된 텍스트의 크기는 이전의 pixel크기의 예시와 같다. 하지만 em크기는 모든 브라우저에서 텍스트의 크기를 조정하는 것이 가능하다.</p>
+            </div>
+
+            <hr>  
+            <div>
+                <h1 class="title2">Use a Combination of Percent and Em</h1>
+                <p>모든 브라우저에서 적용되는 해결책은 디폴트 글꼴의 크기를 &ltbody&gt 요소에 대한 비율로 지정하는 것이다: </p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex17.png">
+                </div>
+
+                <p>위와 같은 코드는 모든 브라우저에서 같은 텍스트 크기를 제공하며 텍스트의 크기를 zoom또는 재조정할 수 있다.</p>
+            </div>
+
+            <hr>  
+            <div>
+                <h1 class="title2">Font Weight</h1>
+                <p>font-weight 속성은 글꼴의 굵기를 지정한다:</p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex18.png">
+                </div>
+
+            </div>
+
+            <hr>  
+            <div>
+                <h1 class="title2">Responsive Font Size</h1>
+                <p>텍스트의 크기는 "vierport width"를 의미하는 vw단위로 지정될수 있다.</p>
+                <p>텍스트의 크기가 브라우저의 크기에 맞춰진다.</p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex19.png">
+                </div>
+                <br>
+                <div class="notice">
+                    <p>Viewport는 브라우저 윈도우의 크기이다. 1vw=viewport 크기의 1%. viewport가 50cm 너비이면,1vw는 0.5cm이다. </p>
+                    
+                </div>
+            </div>
+
+            <hr>  
+            <div>
+                <h1 class="title2">Font Variant</h1>
+                <p>font-variant 속성은 텍스트가 작은 대문자로 표기될 것인지 지정한다.</p>
+                <p>작은 대문자 글꼴에서는 모든 소문자가 대문자로 변환된다. 그러나 변환 된 대문자는 텍스트의 원래 대문자보다 작은 글꼴 크기로 나타난다.</p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex20.png">
+                </div>
+            </div>
+            <hr>
+            <div style="margin-top: 50px;">
+
+                <a class="next" style="width: 100px; float:left;" href="CSS_Text.html">Previous</a>
+                <a class="next" href="CSS_Background.html">Next</a>
+            
+            </div>
+
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>CSS_Report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+    margin:0;
+}
+#container{
+    max-width: 1100px;
+    border-right:1px solid rgba(190, 190, 190, 0.35) ;
+     
+    
+}
+ header{
+      margin-top:20px;
+      
+   
+ }
+ header a{
+     margin-left:10px;
+     font-size: 37px;
+     color:#555555;
+     text-decoration: none;
+     font-family:Impact;
+      
+     
+ }
+ #h{
+    position:sticky;
+    top:0;
+ 
+ }
+
+
+
+
+ #v{
+    position:sticky;
+    top:50px;
+    width: 200px;
+    height: 0px;
+ 
+ }
+ 
+ 
+ 
+ 
+.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5f5f5f;
+  margin-top:10px;
+  height:50px;
+  
+  
+}
+
+.horizontal li {
+  float:left;
+}
+
+.horizontal li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.horizontal li a:hover {
+  background-color: #111;
+}
+
+
+.vertical{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    height:1000px;
+    overflow: auto;
+   
+  
+}
+
+.vertical a {
+  display:block;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+   
+}
+
+.vertical h1{
+    margin-left:20px;
+    
+     
+}
+ 
+
+.vertical li a:hover:not(.active){
+  background-color: rgb(180, 180, 180);
+  color: white;
+}
+
+#active{
+    color: white ;
+    background-color:#4CAF50 ;
+}
+
+#title{
+    font-size: 42px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+
+#title{
+    font-size: 42px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+
+.next{
+    display:block;
+    background-color: #4CAF50;
+    color:white;
+    text-decoration: none;
+    height: 40px;
+    width:70px;
+    font-size:20px ;
+    text-align: center;
+    padding-top: 8px;
+    float: right;
+    margin-top: -10px;
+}
+
+.next:hover{
+    background-color: rgb(52, 116, 54);
+     
+}
+
+
+hr{
+    margin-top:30px;
+    background-color:rgba(187, 187, 187, 0.35);
+    height: 1px;
+    border:0;
+     
+}
+.title2{
+    font-size: 35px;
+    font-family: 'Segoe UI';
+    font-weight: 350;
+}
+
+.Ex{
+    background-color: #f1f1f1;
+    width:515px;
+}
+.Ex p{
+    font-size: 24px;
+    padding:20px 0 0 20px;
+}
+
+.Ex img{
+    padding: 0 0 20px 20px;
+}
+ 
+.notice{
+     background-color: #ffffcc;
+     padding:11px;
+     width:101.9%;
+     margin-left:-20px;
+ }
+ 
+ table{
+    margin:20px 0;     
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 530px;
+    display: table; 
+    border: 1px solid #ccc;
+ }
+
+ table tr{
+    border-bottom: 1px solid #ddd;
+ }
+ table tr:nth-child(2n){
+    background-color:  rgb(236, 236, 236);
+ }
+
+ .background_intro{
+    margin-top:100px;
+    border:1px solid  #ddd;
+    padding:10px;
+    background-color:  #ddd;
+ }
+ 
+ .method{
+    display:block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+ }
+ .method li{
+  display: list-item;
+  
+ }
+ .method_span{
+   line-height: 2;
+   padding-left: 4px;
+   padding-right: 4px;
+   color:crimson;
+   background-color:#f1f1f1 ;
+
+ }
+
+ 
+.Trans_intro{
+  background-color: red;
+  border-radius: 5px;
+  text-align: center;
+  width:90px;
+  height:80px;
+  color:white;
+  font-weight:bold;
+  font-size: 20px;
+  margin:10px;
+  padding-top: 10px;
+  transition: width 1s, height 1s,font-size 1s,background-color 1s,padding-top 1s ;
+}
+.Trans_intro:hover{
+ width:150px;
+ height:130px;
+ font-size:40px;
+ background-color: turquoise;
+ padding-top: 2px;
+}
+</style>
+</head>
+<body>
+    <header>
+        <a href="#">Assignment3schools<span style="color:#4CAF50 ;">.com</span></a>
+        <span style="margin-top:20px; float:right;">THE WORLD's LARGEST WEB DEVELOPER SITE</span>
+    </header>
+ 
+    <nav id="h">
+        <ul class="horizontal">
+            <li><a href="#">HTML</a></li>
+            <li style="background-color:#4CAF50 ;"> <a href="#">CSS</a> </li>
+            <li> <a href="#">JavaScript</a></li>
+            <li style="float: right; background-color:#4CAF50 ;" ><a  href="#">MORE</a></li>
+            
+        </ul>
+
+    </nav>
+
+   
+    <nav id="v">
+      <ul class="vertical">
+          <li><h1>CSS Tutorial</h1></li>
+          <li><a href="CSS_Text.html">Text</a></li>
+          <li><a href="CSS_Font.html ">Font</a></li>
+          <li><a href="CSS_Background.html">Background</a></li>
+          <li><a href="CSS_2DTransform.html">2D Transform</a></li>
+          <li><a id="active" href="CSS_Transition.html">Transition</a></li>
+        </ul>
+    </nav>
+
+<div id="container">
+      <div style="margin-left:200px;padding:100px 16px;   ">
+          <h2 id="title">CSS Transitions</h2>
+          <div>
+              <a class=" next" style="width: 100px; float:left;" href="CSS_2DTransform.html">Previous</a>
+ 
+          </div>
+
+          <hr style="margin-top:100px">   
+
+          <div style="margin-top: 30px;">
+
+            <h1 class="title2">CSS Transitions</h1>
+            <p>CSS Transition는 속성들을 주어진 시간동안 부드럽게 바꿀 수 있도록 한다.</p>
+            <p>마우스를 아래의 요소에 올려 CSS Transition 효과를 봐라:</p>
+            
+            <div class="Trans_intro">
+             <p>CSS</p>
+            </div>
+
+              <p>이번 chapter에서 다음과 같은 속성들을 배운다:</p> 
+              <ul class="method">
+                <li><span class="method_span">transition</span></li>
+                <li><span class="method_span">transition-delay</span></li>
+                <li><span class="method_span">transition-duration</span></li>
+                <li><span class="method_span">transition-property</span></li>
+                <li><span class="method_span">transition-timing-fuction</span></li>
+ 
+              </ul>
+          </div>
+
+          <hr> 
+          <div style="margin-top: 30px;">
+                 <h1 class="title2">How to Use CSS Transitions?</h1> 
+                 <p>transition 효과를 주기위해, 2가지를 지정해야한다:</p>
+                 <ul>
+                   <li>변경될 CSS 속성 </li>
+                   <li>효과의 지속 시간</li>
+                 </ul>
+                 <p><b>Note:</b>지속시간 부분이 지정되지 않는다면, 디폴트 값이 0이므로 transition은 아무 효과를 가지지 않는다.</p>
+                 <p>다음의 예시는 100px*100px red &ltdiv&gt 요소를 보여준다.&ltdiv&gt요소는 또한 2초간의 지속시간동안 너비 속성에 대한 특정한 transition 효과를 가진다. </p>
+
+                 <div class="Ex">
+                   <p>Example</p>
+                   <img src="ex28.png">
+                 </div>
+                 <p>transition 효과는 특정한 CSS속성(너비)이 값을 바꿀 때 시작된다.</p>
+                 <p>사용자가 &ltdiv&gt요소 위로 마우스를 가져가면 width속성에 새로운 값이 지정된다.  </p>
+                
+                 <div class="Ex">
+                   <p>Example</p>
+                   <img src="ex29.png">
+                 </div>
+                 <p>커서가 요소 밖으로 나오면 점차 원래 스타일로 다시 바뀐다.</p>
+          </div>
+
+          <hr> 
+          <div style="margin-top: 30px;">
+                 <h1 class="title2">Change Several Property Values</h1>
+                 <p>다음의 예는 너비는 2초, 높이는 4초 동안의  transition 효과를 더한다:</p>
+                 <div class="Ex">
+                  <p>Example</p>
+                  <img src="ex30.png">
+                </div>
+          </div>
+          <hr> 
+          <div style="margin-top: 30px;">
+                 <h1 class="title2">Specify the Speed Curve of the Transition</h1>
+                 <p> transition-timing-function 속성은 transition 효과의 속도 곡선을 지정한다. </p> 
+                 <p>transition-timing-function 속성은 다음의 값을 가진다:</p>
+                 <ul>
+                   <li><span class="method_span">ease</span>-느리게 시작한 다음 빠르게 다시 천천히 종료하는 transition 효과를 지정(디폴트)</li>
+                   <li><span class="method_span">linear</span>-시작과 끝이 같은 속도인 transition 효과를 지정</li>
+                   <li><span class="method_span">ease-in</span> -시작이 느린 transition 효과를 지정</li>
+                   <li><span class="method_span">ease-out</span>  -끝이 느린 transition 효과를 지정</li>
+                   <li><span class="method_span">ease-in-out</span>  -시작과 끝이 느린 transition 효과를 지정</li>
+                   <li><span class="method_span">cubic-bezier(n,n,n,n)</span>  -3차 bezier 함수에서 자신의 값을 정의 할 수 있다.</li>
+
+                 </ul>
+                 <p>다음 예는 사용할 수 있는 여러가지 속도 곡선을 보여준다.</p>
+                 <div class="Ex">
+                  <p>Example</p>
+                  <img src="ex31.png">
+                </div>
+            </div>
+            <hr> 
+            <div style="margin-top: 30px;">
+                   <h1 class="title2">Delay the Transition Effect</h1>
+                   <p>transition-delay 속성은 transition 효과에 지연시간을 지정한다.</p>
+                   <p>다음의 예는 시작전에 1초의 지연시간을 가진다:</p>
+                   <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex32.png">
+                  </div>
+            </div>
+            <hr> 
+            <div style="margin-top: 30px;">
+                   <h1 class="title2">Transition + Transformation</h1>
+                   <p>다음의 예시는 변형에 transition효과를 더한다:</p>
+                   <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex33.png">
+                  </div>
+            </div>
+            <hr> 
+            <div style="margin-top: 30px;">
+                   <h1 class="title2">More Transition Examples</h1>
+                   <p>CSS transition 속성은 다음과 같이 하나씩 지정할 수 있다:<p>
+                   <div class="Ex">
+                     <p>Example</p>
+                     <img src="ex34.png">
+                   </div>
+                   <p>또는 다음과 같이 요약할 수있다:</p>
+                   <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex35.png">
+                  </div>
+            </div>
+            <div style="margin-top: 50px;">
+              <a class="next" style="width: 100px; float:left;" href="CSS_2DTransform.html">Previous</a>
+               
+           </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

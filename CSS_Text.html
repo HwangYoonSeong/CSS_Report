@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>CSS_Report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  
+    margin:0;
+}
+
+#container{
+    max-width: 1100px;
+    border-right:1px solid rgba(190, 190, 190, 0.35) ;
+     
+    
+}
+ header{
+      margin-top:20px;
+      
+   
+ }
+ header a{
+     margin-left:10px;
+     font-size: 37px;
+     color:#555555;
+     text-decoration: none;
+     font-family:Impact;
+      
+     
+ }
+ #h{
+    position:sticky;
+    top:0;
+ 
+ }
+
+
+
+
+ #v{
+    position:sticky;
+    top:50px;
+    width: 200px;
+    height: 0px;
+ 
+ }
+ 
+ 
+ 
+ 
+.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5f5f5f;
+  margin-top:10px;
+  height:50px;
+  
+  
+}
+
+.horizontal li {
+  float:left;
+}
+
+.horizontal li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.horizontal li a:hover {
+  background-color: #111;
+}
+
+
+.vertical{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    height:1000px;
+    overflow: auto;
+   
+  
+}
+
+.vertical a {
+  display:block;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+   
+}
+
+.vertical h1{
+    margin-left:20px;
+     
+}
+ 
+
+.vertical li a:hover:not(.active){
+  background-color: rgb(180, 180, 180);
+  color: white;
+}
+
+#active{
+    color: white ;
+    background-color:#4CAF50 ;
+}
+
+#title1{
+    font-size: 42px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+
+.next{
+    display:block;
+    background-color: #4CAF50;
+    color:white;
+    text-decoration: none;
+    height: 40px;
+    width:70px;
+    font-size:20px ;
+    text-align: center;
+    padding-top: 8px;
+    float: right;
+    margin-top: -10px;
+}
+
+.next:hover{
+    background-color: rgb(52, 116, 54);
+     
+}
+
+
+hr{
+    margin-top:30px;
+    background-color:rgba(187, 187, 187, 0.35);
+    height: 1px;
+    border:0;
+     
+}
+.title2{
+    font-size: 35px;
+    font-family: 'Segoe UI';
+    font-weight: 350;
+}
+
+.Ex{
+    background-color: #f1f1f1;
+    width:515px;
+}
+.Ex p{
+    font-size: 24px;
+    padding:20px 0 0 20px;
+}
+
+.Ex img{
+    padding: 0 0 20px 20px;
+}
+ 
+ .notice{
+     background-color: #ffffcc;
+     padding:11px;
+     width:101.9%;
+     margin-left:-20px;
+ }
+
+</style>
+</head>
+<body>
+    <header>
+        <a href="#">Assignment3schools<span style="color:#4CAF50 ;">.com</span></a>
+        <span style="margin-top:20px; float:right;">THE WORLD's LARGEST WEB DEVELOPER SITE</span>
+    </header>
+ 
+    <nav id="h">
+        <ul class="horizontal">
+            <li><a href="#">HTML</a></li>
+            <li style="background-color:#4CAF50 ;"> <a href="#">CSS</a> </li>
+            <li> <a href="#">JavaScript</a></li>
+            <li style="float: right; background-color:#4CAF50 ;" ><a  href="#">MORE</a></li>
+            
+        </ul>
+
+    </nav>
+
+   
+    <nav id="v">
+        <ul class="vertical">
+            <li><h1>CSS Tutorial</h1></li>
+            <li><a id="active" href="CSS_Text.html">Text</a></li>
+            <li><a href="CSS_Font.html ">Font</a></li>
+            <li><a href="CSS_Background.html">Background</a></li>
+            <li><a href="CSS_2DTransform.html">2D Transform</a></li>
+            <li><a href="CSS_Transition.html">Transition</a></li>
+          </ul>
+    </nav>
+    
+    
+     
+<div id="container">
+    
+    <div style="margin-left:200px; padding:100px 16px;   ">
+    
+        <h2 id="title1">CSS Text</h2>
+        
+          <div>
+ 
+             
+            <a class="next" href="CSS_Font.html">Next</a>
+        
+          </div>
+      
+          <hr style="margin-top:100px">   
+
+          <div style="margin-top: 30px;">
+
+            <h1 class="title2">Text Color</h1>
+            
+            <p>color 속성은 텍스트 색상을 정하는데 사용된다. 색상은 다음과 같이 구체화된다:</p>
+            <ul>
+                <li>색상의 이름 - Ex) "red"</li>
+                <li>HEX 속성-Ex) "#ff0000"</li>
+                <li>RGB 속성-Ex) "rgb(255,0,0)"</li>
+            </ul>
+            <p>페이지의 디폴트 텍스트 색상은 body 셀렉터 안에 정의 한다.</p>
+            <div class="Ex">
+                <p>Example</p>
+                <img src="ex1.PNG">
+            </div>
+
+
+           </div>
+
+           <hr> 
+
+           <div style="margin-top: 30px;">
+                <h1 class="title2">Text Alignment</h1>
+                <p>text-align 속성은 텍스트의 수평적인 정렬을 정할 때 사용된다.</p>
+                <p>텍스트는 왼쪽, 오른쪽, 중간 또는 justified로 정할 수 있다.</p>
+                <p>다음의 예시는 중간, 왼쪽 그리고 오른쪽으로 정렬된 텍스트를 보여준다.(텍스트의 방향에 따라 텍스트의 디폴트 정렬이 정해진다)</p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex2.png">
+                </div>
+
+                <p>텍스트 정렬이 "justify"일 때, 각 라인은 각 라인의 너비가 같고 왼쪽과 오른쪽의 여백이 일직선이도록 늘어난다.</p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex3.png">
+                </div>
+            </div>
+
+            <hr> 
+
+            <div style="margin-top: 30px;">
+                <h1 class="title2">Text Decoration</h1>
+                <p>text-decoration 속성은 텍스트의 장식을 설정 또는 제거하기 위해 사용된다.</p>
+                <p>text-decoration: none; 속성은 주로 링크의 밑 줄을 제거하기 위해 사용된다.</p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex4.png">
+                </div>
+
+                <p>다른 text-decoration 속성은 텍스트를 장식하기 위해 사용된다.</p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex5.png">
+                </div>
+                <br>
+                <div class="notice">
+                    <p><b>Note</b>: 독자의 헷갈릴 수 있으므로, 링크가 아닌 텍스트에 밑줄을 긋는 것은 권고되지 않는다. </p>
+                </div>
+            </div>
+
+            <hr> 
+            <div style="margin-top: 30px;">
+                <h1 class="title2">Text Transformaion</h1>
+                <p>text-transform 속성은 소문자와 대문자를 지정하는데 사용된다. </p>
+                <p>모든 단어를 소문자화 또는 대문자화 할 수 있고, 각 단어의 첫 번째 단어만 대문자화 할 수 있다.</p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex6.png">
+                </div>
+            </div>
+
+            <hr> 
+            <div style="margin-top: 30px;">
+                <h1 class="title2">Text Indentation</h1>
+                <p>text-indent 속성은 텍스트의 첫번째 라인의 들여쓰기를 지정하는데 사용된다. </p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex7.png">
+                </div>
+            </div>
+            
+            <hr> 
+            <div style="margin-top: 30px;">
+                <h1 class="title2">Letter Spacing</h1>
+                <p>letter-spacing 속성은 텍스트의 문자들 사이의 공간을 지정하는데 사용된다.</p>
+                <p>다은의 예시는 문자들 사이의 공간을 어떻게 증가 또는 감소시키는지 보여준다.</p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex8.png">
+                </div>
+            </div>
+
+            <hr> 
+
+            <div style="margin-top: 30px;">
+                <h1 class="title2">Line Height</h1>
+                <p>line-height 속성은 라인 사이의 공간을 지정할 때 사용된다.</p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex9.png">
+                </div>
+            </div>
+
+            <hr> 
+            <div style="margin-top: 30px;">
+                <h1 class="title2">Text Direction</h1>
+                <p>direction 과 unicode-bidi 속성은 특정 요소의 텍스트 방향을 바꾸는데 사용된다.</p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex10.png">
+                </div>
+            </div>
+           
+            <hr> 
+            <div style="margin-top: 30px;">
+                <h1 class="title2">Word Spacing</h1>
+                <p>word-spacing 속성은 텍스트의 단어 사이의 공간을 지정할 때 사용된다.</p>
+                <p>다음의 예시는 단어들 사이의 공간을 어떻게 증가 또는 감소시키는지 보여준다. </p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex11.png">
+                </div>
+            </div>
+
+            <hr> 
+            <div style="margin-top: 30px;">
+                <h1 class="title2">Text Shadow</h1>
+                <p>text-shadow 속성은 텍스트에 그림자를 더한다.</p>
+                <p>다음의 예시는 수평의 그림자 위치,수직의 그림자 위치, 그리고 그림자의 색상을 지정하는 것을 보여준다.</p>
+                <div class="Ex">
+                    <p>Example</p>
+                    <img src="ex12.png">
+                </div>
+            </div>
+           <hr>
+            <div style="margin-top: 50px;">
+
+               
+                <a class="next" href="CSS_Font.html">Next</a>
+            
+              </div>
+
+       
+        </div>
+
+</div>
+
+</body>
+</html>

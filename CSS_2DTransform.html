@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>CSS_Report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+    margin:0;
+}
+#container{
+    max-width: 1100px;
+    border-right:1px solid rgba(190, 190, 190, 0.35) ;
+     
+    
+}
+ header{
+      margin-top:20px;
+      
+   
+ }
+ header a{
+     margin-left:10px;
+     font-size: 37px;
+     color:#555555;
+     text-decoration: none;
+     font-family:Impact;
+      
+     
+ }
+ #h{
+    position:sticky;
+    top:0;
+ 
+ }
+
+
+
+
+ #v{
+    position:sticky;
+    top:50px;
+    width: 200px;
+    height: 0px;
+ 
+ }
+ 
+ 
+ 
+ 
+.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5f5f5f;
+  margin-top:10px;
+  height:50px;
+  
+  
+}
+
+.horizontal li {
+  float:left;
+}
+
+.horizontal li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.horizontal li a:hover {
+  background-color: #111;
+}
+
+
+.vertical{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    height:1000px;
+    overflow: auto;
+   
+  
+}
+
+.vertical a {
+  display:block;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+   
+}
+
+.vertical h1{
+    margin-left:20px;
+    
+     
+}
+ 
+
+.vertical li a:hover:not(.active){
+  background-color: rgb(180, 180, 180);
+  color: white;
+}
+
+#active{
+    color: white ;
+    background-color:#4CAF50 ;
+}
+
+#title{
+    font-size: 42px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+
+#title{
+    font-size: 42px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+
+.next{
+    display:block;
+    background-color: #4CAF50;
+    color:white;
+    text-decoration: none;
+    height: 40px;
+    width:70px;
+    font-size:20px ;
+    text-align: center;
+    padding-top: 8px;
+    float: right;
+    margin-top: -10px;
+}
+
+.next:hover{
+    background-color: rgb(52, 116, 54);
+     
+}
+
+
+hr{
+    margin-top:30px;
+    background-color:rgba(187, 187, 187, 0.35);
+    height: 1px;
+    border:0;
+     
+}
+.title2{
+    font-size: 35px;
+    font-family: 'Segoe UI';
+    font-weight: 350;
+}
+
+.Ex{
+    background-color: #f1f1f1;
+    width:515px;
+}
+.Ex p{
+    font-size: 24px;
+    padding:20px 0 0 20px;
+}
+
+.Ex img{
+    padding: 0 0 20px 20px;
+}
+ 
+.notice{
+     background-color: #ffffcc;
+     padding:11px;
+     width:101.9%;
+     margin-left:-20px;
+ }
+ 
+ table{
+    margin:20px 0;     
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 530px;
+    display: table; 
+    border: 1px solid #ccc;
+ }
+
+ table tr{
+    border-bottom: 1px solid #ddd;
+ }
+ table tr:nth-child(2n){
+    background-color:  rgb(236, 236, 236);
+ }
+
+ .background_intro{
+    margin-top:100px;
+    border:1px solid  #ddd;
+    padding:10px;
+    background-color:  #ddd;
+ }
+ 
+ .method{
+    display:block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+ }
+ .method li{
+  display: list-item;
+  
+ }
+ .method_span{
+   line-height: 2;
+   padding-left: 4px;
+   padding-right: 4px;
+   color:crimson;
+   background-color:#f1f1f1 ;
+
+ }
+
+.twoDtrans_intro{
+  border: 1px solid black ;
+  border-radius: 5px;
+  width:80px;
+  text-align: center;
+  background-color: red;
+  color:white;
+  font-weight:bold;
+  margin:10px;
+  transition: transform 1s;
+ }
+ .twoDtrans_intro:hover{
+   transform: rotate(180deg);
+  
+ }
+
+</style>
+</head>
+<body>
+    <header>
+        <a href="#">Assignment3schools<span style="color:#4CAF50 ;">.com</span></a>
+        <span style="margin-top:20px; float:right;">THE WORLD's LARGEST WEB DEVELOPER SITE</span>
+    </header>
+ 
+    <nav id="h">
+        <ul class="horizontal">
+            <li><a href="#">HTML</a></li>
+            <li style="background-color:#4CAF50 ;"> <a href="#">CSS</a> </li>
+            <li> <a href="#">JavaScript</a></li>
+            <li style="float: right; background-color:#4CAF50 ;" ><a  href="#">MORE</a></li>
+            
+        </ul>
+
+    </nav>
+
+   
+    <nav id="v">
+      <ul class="vertical">
+          <li><h1>CSS Tutorial</h1></li>
+          <li><a href="CSS_Text.html">Text</a></li>
+          <li><a href="CSS_Font.html ">Font</a></li>
+          <li><a href="CSS_Background.html">Background</a></li>
+          <li><a id="active" href="CSS_2DTransform.html">2D Transform</a></li>
+          <li><a href="CSS_Transition.html">Transition</a></li>
+        </ul>
+    </nav>
+  
+     
+       
+<div id="container">
+  <div style="margin-left:200px;padding:100px 16px;   ">
+      <h2 id="title">CSS 2D Transforms</h2>
+      <div>
+          <a class="next" style="width: 100px; float:left;" href="CSS_Background.html">Previous</a>
+          <a class="next" href="CSS_Transition.html">Next</a>
+      </div>
+
+      <hr style="margin-top:100px">   
+
+          <div style="margin-top: 30px;">
+
+            <h1 class="title2">CSS 2D Transforms</h1>
+            <p>CSS transforms는 요소를 이동,회전,크기 조절 및 기울일 수 있다.</p>
+            <p>2D 변형을 보려면 마우스를 올려봐라: </p>
+            
+            <div class="twoDtrans_intro">
+            <p>2D<br>rotate</p>
+            </div>
+            
+            <p>이번 chapter 에서 다음의 CSS 속성을 배울 것이다.</p>
+            <ul>
+              <li>transform</li>
+            </ul>
+          </div>
+
+      <hr> 
+          <div style="margin-top: 30px;">
+              <h1 class="title2">CSS 2D Transforms Methods</h1>  
+              <p>transform 속성으로 다음과 같은 2D 변형 method들을 사용할 수 있다:</p> 
+              <ul class="method">
+                <li><span class="method_span">translate()</span></li>
+                <li><span class="method_span">rotate()</span></li>
+                <li><span class="method_span">scale()</span></li>
+                <li><span class="method_span">skew()</span></li>
+                <li><span class="method_span">matrix()</span></li>
+
+              </ul>
+          </div>
+
+          <hr> 
+          <div style="margin-top: 30px;">
+              <h1 class="title2">The translate() Method</h1>
+              <img src="transform_ex.png">
+              <p>translate() method는 요소를 현재 위치에서 이동시킨다(주어지는 x축과 y축에 따라)</p>
+              <div class="Ex">
+                <p>Example</p>
+                <img src="ex23.png">
+              </div>
+          </div>
+          
+          <hr> 
+          <div style="margin-top: 30px;">
+              <h1 class="title2">The rotate() Method</h1>    
+              <img src="transform_ex2.png">  
+              <p>rotate() method는 요소를 주어지는 각도에 따라 시계방향 또는 반시계방향으로 돌린다.</p>    
+              <div class="Ex">
+                <p>Example</p>
+                <img src="ex24.png">
+              </div>
+              <p>음수를 사용하면 요소를 반시계 방향으로 돌릴 수 있다.</p>
+          </div>
+          
+          <hr> 
+          <div style="margin-top: 30px;">
+              <h1 class="title2">The scale() Method</h1>  
+              <img src="transform_ex3.png">  
+              <p>scale() method는 요소의 크기를 증가 또는 감소시킨다(주어지는 너비와 높이에 따라)</p>
+              <p>다음의 예시는 &ltdiv&gt  요소를 원래 너비의 2배만큼 그리고 원래 높이의 3배 만큼 증가시킨다:</p>
+              <div class="Ex">
+                <p>Example</p>
+                <img src="ex25.png">
+              </div>
+          </div>
+        
+          <hr> 
+          <div style="margin-top: 30px;">
+              <h1 class="title2">The skew() Method</h1>
+              <p>skew() method는 주어지는 각도를 x축과 y축에 따라 요소를 기울인다.</p>
+              <div class="Ex">
+                <p>Example</p>
+                <img src="ex26.png">
+              </div>
+
+              <p>두번 째 인자가 지정되지 않으면 x축에 따라 기울인다.</p>
+          </div>
+      
+          <hr> 
+          <div style="margin-top: 30px;">
+              <h1 class="title2">The matrix() Method</h1>
+              <img src="transform_ex4.png">  
+              <p>matrix() method는 모든 2D 변형 method들을 하나로 결합한다.</p>
+              <p>matrix() method는 수학함수가 포함된 6개의 인자를 사용하여 요소를 회전,크기 조정,이동 및 기울이기를 할 수 있다.</p>
+              <p>매개변수는 다음과 같다: </p>
+              <p>matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())</p>
+              <div class="Ex">
+                <p>Example</p>
+                <img src="ex27.png">
+              </div>
+          </div>
+    
+          <hr> 
+
+          <div style="margin-top: 50px;">
+
+            <a class="next" style="width: 100px; float:left;" href="CSS_Background.html">Previous</a>
+            <a class="next" href="CSS_Transition.html">Next</a>
+        
+          </div>
+
+  </div>   
+</div>
+
+</body>
+</html>
